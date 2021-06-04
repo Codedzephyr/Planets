@@ -21,23 +21,23 @@ export class EarthComponent implements OnInit {
   ngOnInit(): void {
     this.rotation = {
       suffix: ' Days',
-      duration: 60,
+      duration: 50,
       decimalPlaces:2
     }
 
     this.revolution = {
       decimalPlaces: 2,
-      duration: 60,
+      duration: 50,
       suffix: ' Days'
     }
 
     this.radius = {
       suffix: ' KM',
-      duration: 60,
+      duration: 50,
     }
 
     this.temperature = {
-       duration: 60,
+       duration: 50,
        suffix: ' &#8451;'
     }
   }

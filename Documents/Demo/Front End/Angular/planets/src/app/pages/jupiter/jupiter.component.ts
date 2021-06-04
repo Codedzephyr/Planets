@@ -20,26 +20,26 @@ temperature !: CountUpOptions;
   ngOnInit(): void {
     this.rotation = {
       suffix: ' Days',
-      duration: 60,
+      duration: 50,
       decimalPlaces:2
     }
 
     this.revolution = {
       decimalPlaces: 2,
-      duration: 60,
+      duration: 50,
       suffix: ' Years'
     }
 
     this.radius = {
       prefix: ' -',
       suffix: ' KM',
-      duration: 60,
+      duration: 50,
      
     }
 
     
     this.temperature = {
-      duration: 60,
+      duration: 50,
       suffix: ' &#8451;',
       prefix: '  -'
    }
