@@ -1,0 +1,75 @@
+.content{
+    background-image: url("src/assets/images/background/kai-pilger-Ef6iL87-vOA-unsplash-min (1).jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+     max-height: fit-content;
+     font-family: 'Poppins', sans-serif;
+ }
+ 
+ 
+ .earth{
+     padding: 90px 30px 30px;
+     color: whitesmoke;
+ }
+ 
+ .center-image{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .planet-image{
+     max-width: 100%;
+ }
+ 
+ .planet-earth{
+     font-stretch:expanded;
+     font-size: 50px;
+ }
+ 
+ .planet-description{
+     font-size: 19px;
+ }
+
+div.nav-pils > button {
+    background-color: #040410;
+    color: gray;
+}
+
+ 
+ 
+ div.list-group > a{
+     background-color: #040410;
+     border: 1px solid gray;
+ }
+ 
+ .internal{
+     margin-right: 10px;
+ }
+ 
+ .over{
+     margin-right: 10px;
+ }
+ 
+ .surface{
+     margin-right: 10px;
+ }
+ 
+ .title{
+    color: gray;
+ }
+ 
+ .about{
+    font-size: 40px;
+    font-stretch: expanded;
+    color: gray;
+}
+
+
+@media (max-width: 760px) {
+    .container-descriptive{
+        text-align: center;
+    }
+  }

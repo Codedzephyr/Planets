@@ -1,0 +1,85 @@
+<app-navbar></app-navbar>
+
+
+<!--opening tag for body-->
+<body class="content">
+    <!---container for row-->
+    <div class="container">
+      <!----row container-->
+      <div class="row earth">
+        <!---column for image of planet-->
+        <div class="col-md-6 col-sm-6 mb-5" id="container-image">
+          <!----container for planet image-->
+          <div class="center-image">
+         <img class = "planet-image" src="assets/images/mars/mars.png" alt="mars">
+        </div>
+        <!---closing tag for planet image-->
+            </div>
+            <!---closing tag for column-->
+  
+            <!---opening tag for cloumn for container for planet description-->
+        <div class="col-md-6 col-sm-6">
+          <!---opening tag for container for planet description-->
+          <div class="container-descriptive">
+           <h1 class="planet-earth">Mars</h1>
+           <p class="planet-description pl-5">
+             Mars is the fourth planet from the Sun and the second smallest planet in the Solar System,
+             being larger than only Mercury. In English, Mars carries the name of the Roman god of war
+             and is often referred ti as the "Red Planet". The latter refers to the effect of the iron
+             oxide prevalent on Mar's surface, which gives it a reddish appearance distinctive among 
+             the astronomical bodies visible to the naked eye.
+           </p>
+           <!---container for source-->
+           <div class="shadow-lg p-3 mb-5 bg-dark rounded">Source : <a href="https://en.wikipedia.org/wiki/Mars" style="color: gray;">  Wikipedia</a></div>
+           <!----container for list-group items-->
+           <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action mb-3" aria-current="true">
+             <span class = "over">01</span> OVERVIEW
+            </a>
+            <a href="#" class="list-group-item list-group-item-action mb-3"> <span class="internal">02</span> INTERNAL STRUCTURE</a>
+            <a href="#" class="list-group-item list-group-item-action mb-3"> <span class="surface">03</span> SURFACE GEOLOGY</a>
+            </div>
+            <!---closing tag for container for list group items-->
+          </div>
+          <!---closing tag for container for planet description-->
+        </div>
+        <!---closing tag for column for planet description-->
+      </div>
+      <!---closing tag for row-->
+
+      <br>
+      <br>
+
+
+      <div class="row">
+        <div class="col-md-3 mb-3 text-center" id="description">
+          <p class="title">
+            ROTATION TIME
+          </p>
+          <h1 class="about" [countUp]="endVal" [options]="rotation">0</h1>
+        </div>
+        <div class="col-md-3 mb-3 text-center" id="description">
+          <p class="title">
+            REVOLUTION TIME
+          </p>
+          <h1 class="about" [countUp]="endVal1" [options]="revolution">0</h1>
+        </div>
+        <div class="col-md-3 mb-3 text-center" id="description">
+          <p class="title">
+            RADIUS
+          </p>
+          <h1 class="about" [countUp]="endVal2" [options]="radius">0</h1>
+        </div>
+        <div class="col-md-3 mb-3 text-center" id="description">
+          <p class="title">
+            AVERAGE TEMP
+          </p>
+          <h1 class="about" [countUp]="endVal3" [options]="temperature">0 <span style="font-size: 40px;">&#8451;</span></h1>
+        </div>
+      </div>
+    </div>
+    <!---closing tag for container-->
+    </body>
+    <!---closing tag for body container-->
+  
+  

@@ -1,0 +1,87 @@
+<app-navbar></app-navbar>
+
+
+<!--opening tag for body-->
+<body class="content">
+    <!---container for row-->
+    <div class="container">
+      <!----row container-->
+      <div class="row earth">
+        <!---column for image of planet-->
+        <div class="col-md-6 col-sm-6 mb-5" id="container-image">
+          <!----container for planet image-->
+          <div class="center-image">
+         <img class = "planet-image" src="assets/images/jupiter/jupiter.png" alt="jupiter">
+        </div>
+        <!---closing tag for planet image-->
+            </div>
+            <!---closing tag for column-->
+  
+            <!---opening tag for cloumn for container for planet description-->
+        <div class="col-md-6 col-sm-6">
+          <!---opening tag for container for planet description-->
+          <div class="container-descriptive">
+           <h1 class="planet-earth">Jupiter</h1>
+           <p class="planet-description pl-5">
+            Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a 
+            mass (more than) two and a half times that of all the other planets in the Solar System combined, but 
+            (a little) less than one-thousandth the mass of the Sun. Jupiter is the third-brightest natural object in the 
+            Earth's night sky after the Moon and Venus. It has 
+            been observed since pre-historic times and is 
+            named after the Roman god Jupiter, the king of the gods, because of its massive size.
+           </p>
+           <!---container for source-->
+           <div class="shadow-lg p-3 mb-5 bg-dark rounded">Source : <a href="https://en.wikipedia.org/wiki/Jupiter" style="color: gray;">  Wikipedia</a></div>
+           <!----container for list-group items-->
+           <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action mb-3" aria-current="true">
+             <span class = "over">01</span> OVERVIEW
+            </a>
+            <a href="#" class="list-group-item list-group-item-action mb-3"> <span class="internal">02</span> INTERNAL STRUCTURE</a>
+            <a href="#" class="list-group-item list-group-item-action mb-3"> <span class="surface">03</span> SURFACE GEOLOGY</a>
+            </div>
+            <!---closing tag for container for list group items-->
+          </div>
+          <!---closing tag for container for planet description-->
+        </div>
+        <!---closing tag for column for planet description-->
+      </div>
+      <!---closing tag for row-->
+
+      <br>
+      <br>
+
+
+      <div class="row">
+        <div class="col-md-3 mb-3 text-center" id="description">
+          <p class="title">
+            ROTATION TIME
+          </p>
+          <h1 class="about" [countUp]="endVal" [options]="rotation">0</h1>
+        </div>
+        <div class="col-md-3 mb-3 text-center" id="description">
+          <p class="title">
+            REVOLUTION TIME
+          </p>
+          <h1 class="about" [countUp]="endVal1" [options]="revolution">0</h1>
+        </div>
+        <div class="col-md-3 mb-3 text-center" id="description">
+          <p class="title">
+            RADIUS
+          </p>
+          <h1 class="about" [countUp]="endVal2" [options]="radius">0</h1>
+        </div>
+        <div class="col-md-3 mb-3 text-center" id="description">
+          <p class="title">
+            AVERAGE TEMP
+          </p>
+          <h1 class="about" [countUp]="endVal3" [options]="temperature">0 <span style="font-size: 40px;">&#8451;</span></h1>
+        </div>
+      </div>
+   
+    </div>
+    <!---closing tag for container-->
+    </body>
+    <!---closing tag for body container-->
+  
+  
