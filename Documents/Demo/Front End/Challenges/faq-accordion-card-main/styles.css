@@ -1,0 +1,233 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  max-height: 100%;
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 12.8px);
+}
+
+.container {
+  width: 75%;
+  background: #fff;
+  min-height: calc(70vh - 12.8px);
+  border-radius: 10px;
+  display: flex;
+}
+
+.background-image {
+  width: 100%;
+  position: relative;
+}
+
+.container-for-image {
+  position: relative;
+  background-image: url(./images/bg-pattern-desktop.svg),
+    url(./images/illustration-woman-online-desktop.svg);
+  background-position: 180% 120%, -20% 40%;
+  background-size: 120%, 80%;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.box {
+  position: absolute;
+  left: -120px;
+  top: 200px;
+}
+
+.accordion-content {
+  width: 100%;
+}
+
+.heading {
+  color: hsl(237, 12%, 33%);
+  padding: 60px 0px 40px 0px;
+}
+
+.heading1 {
+  color: hsl(240, 6%, 50%);
+}
+
+.team {
+  text-decoration: none;
+  color: hsl(240, 6%, 50%);
+}
+
+.heading1:hover {
+  color: hsl(14, 88%, 65%) !important;
+  cursor: pointer;
+}
+
+.paragraph {
+  color: hsl(240, 6%, 50%);
+  font-family: Kumbh Sans;
+  padding: 20px 0px 0px 0px;
+  display: none;
+}
+
+.line {
+  margin: 20px 130px 20px 2px;
+  background-color: hsl(240, 5%, 91%);
+  border: 1px solid hsl(240, 5%, 91%);
+}
+
+#maximum {
+  text-decoration: none;
+  color: hsl(240, 6%, 50%);
+}
+
+#file:hover {
+  color: hsl(14, 88%, 65%) !important;
+  cursor: pointer;
+}
+
+#paragraph1 {
+  color: hsl(240, 6%, 50%);
+  font-family: Kumbh Sans;
+  padding: 20px 0px 0px 0px;
+  display: none;
+}
+
+#reset {
+  text-decoration: none;
+  color: hsl(240, 6%, 50%);
+}
+
+#password:hover {
+  color: hsl(14, 88%, 65%) !important;
+  cursor: pointer;
+}
+
+#paragraph2 {
+  color: hsl(240, 6%, 50%);
+  font-family: Kumbh Sans;
+  padding: 20px 0px 0px 0px;
+  display: none;
+}
+
+.container2 {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+}
+
+#cancel {
+  text-decoration: none;
+  color: hsl(240, 6%, 50%);
+}
+
+#subscription:hover {
+  color: hsl(14, 88%, 65%) !important;
+  cursor: pointer;
+}
+
+#paragraph3 {
+  color: hsl(240, 6%, 50%);
+  font-family: Kumbh Sans;
+  padding: 20px 0px 0px 0px;
+  display: none;
+}
+
+#additional {
+  text-decoration: none;
+  color: hsl(240, 6%, 50%);
+}
+
+#support:hover {
+  color: hsl(14, 88%, 65%) !important;
+  cursor: pointer;
+}
+
+#paragraph4 {
+  color: hsl(240, 6%, 50%);
+  font-family: Kumbh Sans;
+  padding: 20px 0px 0px 0px;
+  display: none;
+}
+
+.image-container {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .box {
+    display: none;
+  }
+  .accordion-actual-content {
+    padding: 20px;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  main {
+    margin-top: 200px;
+  }
+
+  .container2 {
+    width: 100%;
+  }
+
+  .heading {
+    text-align: center;
+  }
+
+  .line {
+    margin: 20px 0px 20px 0px;
+  }
+
+  .bg-pattern {
+    width: 102%;
+  }
+
+  .image-container {
+    display: block;
+    width: 100%;
+    position: relative;
+  }
+
+  .illustration {
+    position: absolute;
+    width: 100%;
+    bottom: 54px;
+    left: 0px;
+  }
+
+  .container-for-image {
+    display: none;
+  }
+
+  .box {
+    display: none;
+  }
+
+  .box1 {
+    position: absolute;
+    bottom: 80px;
+    left: -60px;
+  }
+}
